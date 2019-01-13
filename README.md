@@ -2,6 +2,12 @@
 
 Entorno de desarrollo creado con Docker. Este entorno de desarrollo será usado por los integrantes del equipo de desarrollo de decide-ganimedes-almacenamiento de la asignatura Evolución y Gestión de la configuración del curso 2018-19.
 
+El entorno de desarrollo crea los siguientes contendores en nuestro demonio de Docker local:
+
+- **decide_web**
+- **decide_db**
+- **decide_mongo**
+
 ## Instrucciones de ejecución
 
 Para ejecutar el entorno de desarrollo con Docker hay que seguir los siguientes pasos:
