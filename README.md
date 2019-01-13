@@ -11,14 +11,32 @@ Para ejecutar el entorno de desarrollo con Docker hay que seguir los siguientes 
 ![Estructura del proyecto](./images/project.png)
 
 2.Estandon en la raiz del proyecto de decide, ejecutar el siguiente comando:
-~~~
-  $ docker-compose up -d
-~~~
+
+    $ docker-compose up -d
+
 3.En el caso de queramos volver a construir la imagen de Decide sin parar los contenedores, habrá que ejecutar el siguiente comando:
-~~~
-  $ docker-compose build
-~~~
+
+    $ docker-compose build
+
 4.Por último para parar todos los contenedores relacionados con Decide, utilizar el siguiente comando:
-~~~
-  $ docker-compose down
-~~~
+
+    $ docker-compose down
+
+## Posible comandos necesarios despues de la ejecución
+
+
+Crear un usuario administrador:
+
+    $ docker exec -ti decide_web ./decide/manage.py createsuperuser
+
+Lanzar la consola django:
+
+    $ docker exec -ti decide_web ./decide/manage.py shell
+
+Lanzar tests:
+
+    $ docker exec -ti decide_web ./decide/manage.py test
+
+Lanzar una consola SQL:
+
+    $ docker exec -ti decide_db ash -c "su - postgres -c 'psql postgres'"
