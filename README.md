@@ -16,7 +16,7 @@ Para ejecutar el entorno de desarrollo con Docker hay que seguir los siguientes 
 
 ![Estructura del proyecto](./images/project.png)
 
-2.Estandon en la raiz del proyecto de decide, ejecutar el siguiente comando:
+2.Estando en la raiz del proyecto de decide, ejecutar el siguiente comando:
 
     $ docker-compose up -d
 
@@ -28,8 +28,7 @@ Para ejecutar el entorno de desarrollo con Docker hay que seguir los siguientes 
 
     $ docker-compose down
 
-## Posible comandos necesarios despues de la ejecución
-
+## Posibles comandos necesarios despues de la ejecución
 
 Crear un usuario administrador:
 
